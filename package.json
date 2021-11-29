@@ -1,0 +1,20 @@
+{
+  "name": "cordova-plugin-fullscreen-image",
+  "version": "1.0.1",
+  "description": "Show image in full screen mode with native components.",
+  "cordova": {
+    "id": "cordova-plugin-fullscreen-image",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemerisuk/FullScreenImage-Cordova-Plugin.git"
+  },
+  "scripts": {
+    "version": "perl -p -i -e 's/(version=)\"\\d+\\.\\d+\\.\\d+\"/$1\"'$npm_package_version'\"$2/' plugin.xml && git add plugin.xml",
+    "postversion": "git push && git push --tags"
+  },
+}
